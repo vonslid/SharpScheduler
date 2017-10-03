@@ -21,6 +21,9 @@ namespace SharpScheduler
         {
             Console.Title = "SharpScheduler v0.1";
             Console.WindowHeight = 45;
+            Console.WindowWidth = 80;
+            Console.BufferHeight = 45;
+            Console.BufferWidth = 80;
             Console.BackgroundColor = ConsoleColor.Gray;
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.Clear();
@@ -129,25 +132,35 @@ namespace SharpScheduler
         {
             string welcome = "Добро пожаловать в SharpScheduler v0.1";
             string info = "vonslid 2017";
+            string press = "Нажмите любую клавишу...";
             string spaces = "";
-            for (int i = 0; i < 21; i++)
+            for (int i = 0; i < 20; i++)
             {
                 spaces += "\n";
             }
             Console.Write(spaces);
+
             spaces = "";
             for (int i = 0; i < 40 - welcome.Length / 2; i++)
             {
                 spaces += " ";
             }
             Console.WriteLine(spaces + welcome);
+
             spaces = "";
             for (int i = 0; i < 40 - info.Length / 2; i++)
             {
                 spaces += " ";
             }
-            Console.Write(spaces);
-            Console.WriteLine(info);
+            Console.WriteLine(spaces + info);
+
+            spaces = "";
+            for (int i = 0; i < 40 - press.Length / 2; i++)
+            {
+                spaces += " ";
+            }
+            Console.WriteLine(spaces + press);
+
 
             spaces = "";
             for (int i = 0; i < 21; i++)
